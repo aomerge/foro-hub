@@ -18,4 +18,9 @@ public class UserController {
     public UserDTO getUserById(@PathVariable Long id) {
         return userService.getUserById(id);
     }
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
 }
